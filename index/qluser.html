@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/user.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="users">
+        <!-- Tab items -->
+        <div class="tabs1">
+            <div class="tab-item1 active">
+                <i class="tab-icon fas fa-code"></i> User List
+            </div>
+            <div class="tab-item1">
+                <i class="tab-icon fas fa-cog"></i>User Edition
+            </div>
+
+            <div class="line"></div>
+        </div>
+
+        <!-- Tab content -->
+        <div class="tab-content1">
+            <div class="tab-pane1 active">
+                <div class="pane-table">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Username</th>
+                                <th>Password</th>
+                                <th>Full Name</th>
+                                <th>Email Address</th>
+                                <th>Role</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>thuannv</td>
+                                <td>123</td>
+                                <td>Nguyễn Văn Thuần</td>
+                                <td>thuan@gmail.com</td>
+                                <td>admin</td>
+                                <td><a href="">Edit</a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="tab-pane1">
+                <form class="tab-pane-form">
+                    <div class="form-input">
+                        <label>Username</label>
+                        <input placeholder="Username?">
+                    </div>
+                    <div class="form-input">
+                        <label>Password</label>
+                        <input type="password" placeholder="Password?">
+                    </div>
+                    <div class="form-input">
+                        <label>Fullname</label>
+                        <input placeholder="Fullname?">
+                    </div>
+                    <div class="form-input">
+                        <label>Email</label>
+                        <input placeholder="Email?">
+                    </div>
+                    <div class="tab-button">
+                        <button>UpDate</button>
+                        <button>Delete</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="/css/tabss.js"></script>
+</body>
+
+</html>

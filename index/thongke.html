@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="/css/thongke.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="content__thongke">
+        <h3>Báo cáo - Thống kê</h3>
+        <div class="content__thongke-tabs">
+            <div class="content__thongke-tabs-items">
+                <a href="">Favorites</a>
+            </div>
+            <div class="content__thongke-tabs-items">
+                <a href="">Favorite Users</a>
+            </div>
+            <div class="content__thongke-tabs-items">
+                <a href="">Share Friend</a>
+            </div>
+        </div>
+        <div class="content__thongke-table">
+            <div class="tabPanel">
+                <div class="pane-form-table">
+
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Favorites Title</th>
+                                <th>Favorite Count</th>
+                                <th>Latest Date</th>
+                                <th>Old Date</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <c:forEach var="item" items="${list}">
+                                <tr>
+                                    <td>${item.group}</td>
+                                    <td>${item.like }</td>
+                                    <td>${item.newest }</td>
+                                    <td>${item.oldest}</td>
+
+                                </tr>
+
+                            </c:forEach>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
